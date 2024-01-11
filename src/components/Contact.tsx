@@ -1,5 +1,3 @@
-import React from "react";
-
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -15,7 +13,10 @@ const Contact = ({ id }: { id: string }) => {
           target="_blank"
           className=""
         >
-          <FontAwesomeIcon className="w-10 h-10 hover:text-secondary" icon={faLinkedin} />
+          <FontAwesomeIcon
+            className="w-10 h-10 hover:text-secondary"
+            icon={faLinkedin}
+          />
           <h3 className="text-lg font-bold">Let's Connect</h3>
           <p className="link link-hover">LinkedIn Profile</p>
         </a>
@@ -24,7 +25,10 @@ const Contact = ({ id }: { id: string }) => {
           target="_blank"
           className=""
         >
-          <FontAwesomeIcon className="w-10 h-10 hover:text-secondary" icon={faEnvelope} />
+          <FontAwesomeIcon
+            className="w-10 h-10 hover:text-secondary"
+            icon={faEnvelope}
+          />
           <h3 className="text-lg font-bold">Email me at</h3>
           <p className="link link-hover">daniyal.bekinalkar@gmail.com</p>
         </a>

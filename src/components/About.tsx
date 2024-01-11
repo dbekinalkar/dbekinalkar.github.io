@@ -1,5 +1,3 @@
-import React from "react";
-
 import profile from "../assets/images/profile.jpg";
 
 const About = ({ id }: { id: string }) => {

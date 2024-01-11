@@ -1,5 +1,3 @@
-import React from "react";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -28,13 +26,25 @@ const Hero = ({ id }: { id: string }) => {
             <p className="text-2xl mb-8">{content.description}</p>
             {/* <p className="mb-8">{content.image_credit}</p> */}
             <div className="flex gap-8 justify-center">
-              <a href="https://github.com/dbekinalkar" target="_blank" className="hover:text-secondary">
+              <a
+                href="https://github.com/dbekinalkar"
+                target="_blank"
+                className="hover:text-secondary"
+              >
                 <FontAwesomeIcon className="w-10 h-10" icon={faGithub} />
               </a>
-              <a href="https://www.linkedin.com/in/daniyal-bekinalkar/" target="_blank" className="hover:text-secondary">
+              <a
+                href="https://www.linkedin.com/in/daniyal-bekinalkar/"
+                target="_blank"
+                className="hover:text-secondary"
+              >
                 <FontAwesomeIcon className="w-10 h-10" icon={faLinkedin} />
               </a>
-              <a href="mailto:daniyal.bekinalkar@gmail.com" target="_blank" className="hover:text-secondary">
+              <a
+                href="mailto:daniyal.bekinalkar@gmail.com"
+                target="_blank"
+                className="hover:text-secondary"
+              >
                 <FontAwesomeIcon className="w-10 h-10" icon={faEnvelope} />
               </a>
             </div>

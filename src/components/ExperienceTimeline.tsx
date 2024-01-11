@@ -1,5 +1,3 @@
-import React from "react";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBriefcase, faCircle } from "@fortawesome/free-solid-svg-icons";
 
@@ -42,9 +40,7 @@ const TimelineEvent = ({
       </div>
       <div className="timeline-end mb-10 ml-4">
         <div className="container lg:flex lg:flex-row-reverse justify-between">
-          <div className="font-mono italic">
-            {date}
-          </div>
+          <div className="font-mono italic">{date}</div>
           <div>
             <div className="text-lg font-black">{position}</div>
             <div className="text-md font-black">{company}</div>

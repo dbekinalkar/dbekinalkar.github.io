@@ -2,7 +2,7 @@ import React from "react";
 
 const ProjectCarousel = ({
   children,
-  id
+  id,
 }: {
   children: React.ReactNode;
   id: string;
