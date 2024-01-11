@@ -1,12 +1,19 @@
 import React from "react";
 
-const ThemeController = () => {
+const ThemeController = ({
+  value,
+  onChange,
+}: {
+  value: string;
+  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+}) => {
   return (
     <label className="cursor-pointer grid place-items-center">
       <input
         type="checkbox"
-        value="synthwave"
         className="toggle theme-controller bg-base-content row-start-1 col-start-1 col-span-2"
+        checked={value === "dark"}
+        onChange={onChange}
       />
       <svg
         className="col-start-1 row-start-1 stroke-base-100 fill-base-100"
