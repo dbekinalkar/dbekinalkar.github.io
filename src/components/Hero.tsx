@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
-import backgroundImage from "../assets/images/hero.jpg";
+// import backgroundImage from "public/images/hero.jpg";
 
 const content = {
   title: "Daniyal Bekinalkar",
@@ -14,7 +14,7 @@ const Hero = ({ id }: { id: string }) => {
     <div
       className="hero min-h-screen scroll-mt-16"
       style={{
-        backgroundImage: `url(${backgroundImage})`,
+        backgroundImage: "url(images/hero.jpg)",
       }}
       id={id}
     >

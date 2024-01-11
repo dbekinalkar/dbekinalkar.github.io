@@ -11,7 +11,7 @@ import EducationTimeline from "./components/EducationTimeline";
 import About from "./components/About";
 import Contact from "./components/Contact";
 
-import image from "./assets/images/pokemon-card-discord-bot.png";
+// import image from "../public/images/pokemon-card-discord-bot.png";
 
 const projects: IProject[] = [
   {
@@ -82,7 +82,7 @@ const projects: IProject[] = [
     title: "Pokemon Card Discord Bot",
     description:
       "Project Description Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit ",
-    image: image,
+    image: "images/pokemon-card-discord-bot.png",
     link: "",
     technologies: ["Python", "Discord.py", "MongoDB"],
   },
@@ -91,7 +91,7 @@ const projects: IProject[] = [
 function App() {
   const [theme, setTheme] = useState<"light" | "dark">("light");
 
-  console.log(image);
+  // console.log(image);
 
   useEffect(() => {
     const localTheme = localStorage.getItem("theme");
