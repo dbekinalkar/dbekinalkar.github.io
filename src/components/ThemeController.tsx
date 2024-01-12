@@ -8,6 +8,7 @@ const ThemeController = ({
   return (
     <label className="cursor-pointer grid place-items-center">
       <input
+        id="theme-controller"
         type="checkbox"
         className="toggle theme-controller bg-base-content row-start-1 col-start-1 col-span-2"
         checked={value === "dark"}
