@@ -60,32 +60,34 @@ const EducationTimeline = ({ id }: { id: string }) => {
   return (
     <div className="bg-base-200 scroll-mt-16" id={id}>
       <div className="container py-8 mx-auto">
-        <h1 className="text-5xl font-bold text-center mb-8">Education</h1>
-        <ul className="timeline timeline-snap-icon timeline-compact timeline-vertical max-w-md lg:max-w-xl mx-auto">
-          <li>
-            <TimelineEvent
-              date="August 2022 - Present"
-              position="Bachelor of Science in Computer Science"
-              company="Purdue University"
-            >
-              Majored in Computer Science with a focus in Software Engineering
-              and a minor in Mathematics.
-            </TimelineEvent>
-            <hr />
-          </li>
-          <li>
-            <hr />
-            <TimelineEvent
-              date="August 2018 - May 2022"
-              position="High School Diploma"
-              company="Glenbard North High School"
-            >
-              Graduated from Glenbard North High School and received the
-              Illinois State Scholar Award.
-            </TimelineEvent>
-            <hr />
-          </li>
-        </ul>
+        <div className="mx-4">
+          <h1 className="text-5xl font-bold text-center mb-8">Education</h1>
+          <ul className="timeline timeline-snap-icon timeline-compact timeline-vertical max-w-md lg:max-w-xl mx-auto">
+            <li>
+              <TimelineEvent
+                date="August 2022 - Present"
+                position="Bachelor of Science in Computer Science"
+                company="Purdue University"
+              >
+                Majored in Computer Science with a focus in Software Engineering
+                and a minor in Mathematics.
+              </TimelineEvent>
+              <hr />
+            </li>
+            <li>
+              <hr />
+              <TimelineEvent
+                date="August 2018 - May 2022"
+                position="High School Diploma"
+                company="Glenbard North High School"
+              >
+                Graduated from Glenbard North High School and received the
+                Illinois State Scholar Award.
+              </TimelineEvent>
+              <hr />
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );
