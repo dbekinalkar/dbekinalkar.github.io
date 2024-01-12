@@ -4,6 +4,7 @@ const Project = ({
   technologies,
   image,
   link,
+  inProgress,
 }: IProject) => {
   return (
     <a
@@ -15,7 +16,10 @@ const Project = ({
       <div className="hero-overlay bg-base-300 opacity-95 glass rounded-lg invisible group-hover:visible ">
         <div className="p-4 h-full flex flex-col justify-between">
           <div>
-            <h2 className="text-xl font-bold mb-2">{title}</h2>
+            <h2 className="text-xl font-bold mb-2">
+              {title}
+              {inProgress && <div className="badge badge-secondary ml-2">IN PROGRESS</div>}
+            </h2>
             <p className="">{description}</p>
           </div>
           <div className="card-actions justify-end align-bottom">

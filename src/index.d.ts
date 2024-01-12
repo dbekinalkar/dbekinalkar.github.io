@@ -4,4 +4,5 @@ interface IProject {
   technologies?: string[];
   image: string;
   link: string;
+  inProgress?: boolean;
 }
