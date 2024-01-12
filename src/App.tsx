@@ -16,74 +16,78 @@ import Contact from "./components/Contact";
 const projects: IProject[] = [
   {
     title: "Basketball League Sim",
-    description: "Project Description",
+    description:
+      "A website that allows users to simulate a basketball league and view statistics about the league.",
     image:
-      "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
-    link: "",
+      "images/basketball-league-sim.jpg",
+    link: "https://github.com/dbekinalkar/bb-game-sim",
     technologies: ["React.js", "TailwindCSS", "Flask", "MongoDB"],
+    inProgress: true,
   },
   {
     title: "Pokecard",
-    description: "Project Description",
+    description:
+      "A website that allows users to open Pokemon card packs and trade cards with other users, integrated with Discord.",
     image:
-      "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
-    link: "",
+      "images/pokecard.jpg",
+    link: "https://pokecard-discord.web.app",
     technologies: ["React.js", "TailwindCSS", "Express.js", "Firebase"],
+    inProgress: true,
   },
   {
     title: "Personal Website",
-    description: "Project Description",
-    image:
-      "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
-    link: "",
+    description: "A website that showcases my projects and experience.",
+    image: "images/personal-website.png",
+    link: "https://dbekinalkar.github.io/",
     technologies: ["React.js", "TailwindCSS", "DaisyUI"],
   },
   {
     title: "Fitness Tracker",
-    description: "Project Description",
-    image:
-      "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
-    link: "",
+    description:
+      "A website that allows users to track their workouts and view their progress.",
+    image: "images/fitness-tracker.png",
+    link: "https://fitness-tracker-five-ebon.vercel.app/",
     technologies: ["React.js", "Next.js", "TailwindCSS"],
   },
   {
-    title: "Movie Searcher",
-    description: "Project Description",
-    image:
-      "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
-    link: "",
-    technologies: ["React.js", "Nextjs", "TailwindCSS", "TMDB API"],
-  },
-  {
     title: "Happy Plants",
-    description: "Project Description",
-    image:
-      "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
-    link: "",
+    description:
+      "A mobile app that allows users to track their plants and receive notifications about them.",
+    image: "images/happy-plants.png",
+    link: "https://github.com/dbekinalkar/happy_plants",
     technologies: ["Flutter"],
   },
   {
+    title: "Movie Searcher",
+    description:
+      "A website that allows users to search for movies and view details about them.",
+    image: "images/movie-searcher.png",
+    link: "https://movie-website-delta-one.vercel.app/",
+    technologies: ["React.js", "Nextjs", "TailwindCSS", "TMDB API"],
+  },
+  {
     title: "Apartment Rating App",
-    description: "Project Description",
-    image:
-      "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
+    description:
+      "A mobile app that allows users to rate apartments and view ratings of apartments.",
+    image: "images/apartment-rating-app.png",
     link: "",
     technologies: ["Flutter", "Firebase", "Google Maps API"],
   },
   {
     title: "Walk Me Home",
-    description: "Project Description",
+    description:
+      "A mobile app that allows users to safely watch over each other as they walk home.",
     image:
-      "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
-    link: "",
+      "images/walk-me-home.png",
+    link: "https://devpost.com/software/walkmehome-tq5cmv",
     technologies: ["Flutter", "Flask", "Google Maps API"],
   },
   {
     title: "Pokemon Card Discord Bot",
     description:
-      "Project Description Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit ",
+      "A Discord bot that allows users to open Pokemon card packs and trade cards with other users.",
     image: "images/pokemon-card-discord-bot.png",
-    link: "",
+    link: "https://github.com/dbekinalkar/Pokemon-Card-Discord-Bot",
     technologies: ["Python", "Discord.py", "MongoDB"],
   },
 ];
