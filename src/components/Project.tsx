@@ -16,7 +16,7 @@ const Project = ({
         <div className="p-4 h-full flex flex-col justify-between">
           <div>
             <h2 className="text-xl font-bold mb-2">{title}</h2>
-            <p className="text-neutral-content">{description}</p>
+            <p className="">{description}</p>
           </div>
           <div className="card-actions justify-end align-bottom">
             {technologies &&
