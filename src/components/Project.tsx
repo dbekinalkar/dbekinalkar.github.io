@@ -10,7 +10,7 @@ const Project = ({
     <a
       href={link}
       target="_blank"
-      className="bg-gray-200 w-96 h-64 rounded-lg shadow-lg bg-cover bg-center group"
+      className="bg-gray-200 w-80 h-64 rounded-lg shadow-lg bg-cover bg-center group"
       style={{ backgroundImage: `url(${image})` }}
     >
       <div className="hero-overlay bg-base-300 opacity-95 glass rounded-lg invisible group-hover:visible ">
