@@ -4,12 +4,13 @@ import NavigationBar from "./components/NavigationBar";
 import Hero from "./components/Hero";
 // import ProjectGrid from "./components/ProjectGrid";
 import ProjectCarousel from "./components/ProjectCarousel";
-import Project from "./components/Project";
+// import Project from "./components/Project";
 import Footer from "./components/Footer";
 import ExperienceTimeline from "./components/ExperienceTimeline";
 import EducationTimeline from "./components/EducationTimeline";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import AnimatedProject from "./components/AnimatedProject";
 
 // import image from "../public/images/pokemon-card-discord-bot.png";
 
@@ -17,9 +18,8 @@ const projects: IProject[] = [
   {
     title: "Basketball League Sim",
     description:
-      "A website that allows users to simulate a basketball league and view statistics about the league.",
-    image:
-      "images/basketball-league-sim.jpg",
+      "A website that allows users to simulate a basketball league and manage teams.",
+    image: "images/basketball-league-sim.jpg",
     link: "https://github.com/dbekinalkar/bb-game-sim",
     technologies: ["React.js", "TailwindCSS", "Flask", "MongoDB"],
     inProgress: true,
@@ -28,8 +28,7 @@ const projects: IProject[] = [
     title: "Pokecard",
     description:
       "A website that allows users to open Pokemon card packs and trade cards with other users, integrated with Discord.",
-    image:
-      "images/pokecard.jpg",
+    image: "images/pokecard.jpg",
     link: "https://pokecard-discord.web.app",
     technologies: ["React.js", "TailwindCSS", "Express.js", "Firebase"],
     inProgress: true,
@@ -77,8 +76,7 @@ const projects: IProject[] = [
     title: "Walk Me Home",
     description:
       "A mobile app that allows users to safely watch over each other as they walk home.",
-    image:
-      "images/walk-me-home.png",
+    image: "images/walk-me-home.png",
     link: "https://devpost.com/software/walkmehome-tq5cmv",
     technologies: ["Flutter", "Flask", "Google Maps API"],
   },
@@ -95,14 +93,18 @@ const projects: IProject[] = [
 function App() {
   const [theme, setTheme] = useState<"light" | "dark">("light");
 
-  // console.log(image);
-
   useEffect(() => {
     const localTheme = localStorage.getItem("theme");
     if (localTheme === "dark") {
       setTheme("dark");
     }
   }, []);
+
+  const [tooltip, setTooltip] = useState<boolean>(true);
+
+  const toggleTooltip = () => {
+    setTooltip(false);
+  };
 
   useEffect(() => {
     if (theme === "dark") {
@@ -173,7 +175,12 @@ function App() {
       <About id="about" />
       <ProjectCarousel id="projects">
         {projects.map((project) => (
-          <Project key={project.title} {...project} />
+          <AnimatedProject
+            key={project.title}
+            {...project}
+            tooltip={tooltip}
+            onClick={toggleTooltip}
+          />
         ))}
       </ProjectCarousel>
       <ExperienceTimeline id="experience" />

@@ -18,14 +18,18 @@ const Project = ({
           <div>
             <h2 className="text-xl font-bold mb-2">
               {title}
-              {inProgress && <div className="badge badge-secondary ml-2">IN PROGRESS</div>}
+              {inProgress && (
+                <div className="badge badge-secondary ml-2">IN PROGRESS</div>
+              )}
             </h2>
             <p className="">{description}</p>
           </div>
           <div className="card-actions justify-end align-bottom">
             {technologies &&
               technologies.map((technology, index) => (
-                <div key={index} className="badge badge-outline">{technology}</div>
+                <div key={index} className="badge badge-outline">
+                  {technology}
+                </div>
               ))}
           </div>
         </div>

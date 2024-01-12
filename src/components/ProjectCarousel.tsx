@@ -13,6 +13,7 @@ const ProjectCarousel = ({
   children: React.ReactNode;
   id: string;
 }) => {
+
   const scrollCarousel = (dir: number) => {
     const carousel = document.getElementById("carousel");
     if (carousel) {
@@ -47,7 +48,7 @@ const ProjectCarousel = ({
         </div>
         <div className="mx-8 mb-8">
           <div
-            className="carousel carousel-center w-full p-4 space-x-4 bg-neutral rounded-box touch-pan-x"
+            className="carousel carousel-center w-full pt-8 p-4 space-x-4 bg-neutral rounded-box touch-pan-x"
             id="carousel"
           >
             {React.Children.toArray(children).map((child, index) => (
