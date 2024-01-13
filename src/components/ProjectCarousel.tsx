@@ -28,7 +28,7 @@ const ProjectCarousel = ({
   return (
     <div className="bg-base-300 scroll-mt-16" id={id}>
       <div className="container py-8 mx-auto">
-        <div className="flex justify-evenly content-center items-center mb-8">
+        <div className="flex justify-center gap-8 content-center items-center mb-8">
           <AnimatedButton
             className="fa-layers fa-2x align-top"
             onClick={() => scrollCarousel(-1)}
