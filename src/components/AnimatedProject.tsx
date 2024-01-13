@@ -84,7 +84,7 @@ const AnimatedProject: React.FC<IAnimatedProjectProps> = ({
                   )}
                 </div>
                 {technologies && (
-                  <div className="card-actions justify-end align-bottom">
+                  <div className="card-actions justify-end align-bottom flex-wrap-reverse">
                     {technologies.map((technology, index) => (
                       <div key={index} className="badge badge-outline">
                         {technology}
