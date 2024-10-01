@@ -61,6 +61,29 @@ const ExperienceTimeline = ({ id }: { id: string }) => {
           <h1 className="text-5xl font-bold text-center mb-8">Experience</h1>
           <ul className="timeline timeline-snap-icon timeline-compact timeline-vertical max-w-md lg:max-w-xl mx-auto">
             <li>
+              <hr />
+              <TimelineEvent
+                date="June 2024 - Present"
+                position="Software Engineer Co-Op"
+                company="Alignable"
+              >
+                North America's largest business networking platform 
+                connecting over 9 million business owners.
+              </TimelineEvent>
+              <hr />
+            </li>
+            <li>
+              <hr />
+              <TimelineEvent
+                date="August 2024 - Present"
+                position="Software Engineer"
+                company="Zoltan Nagy Research Lab"
+              >
+                Open source developer and maintainer of the PharmaPy library.
+              </TimelineEvent>
+              <hr />
+            </li>
+            <li>
               <TimelineEvent
                 date="July 2023 - September 2023"
                 position="Software Engineer Intern"
@@ -68,18 +91,6 @@ const ExperienceTimeline = ({ id }: { id: string }) => {
               >
                 i4software is a software company that focuses on developing
                 mobile and web applications for clients.
-              </TimelineEvent>
-              <hr />
-            </li>
-            <li>
-              <hr />
-              <TimelineEvent
-                date="August 2022 - May 2023"
-                position="Software Developer Intern"
-                company="Purdue Flutter Development Club"
-              >
-                The Purdue Flutter Development Club is a student organization
-                that focuses on developing mobile applications using Flutter.
               </TimelineEvent>
               <hr />
             </li>
