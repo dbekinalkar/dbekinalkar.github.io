@@ -151,11 +151,6 @@ function App() {
           </a>
         </li>
         <li>
-          <a href="/#projects" onClick={scrollTo("projects")}>
-            Projects
-          </a>
-        </li>
-        <li>
           <a href="/#experience" onClick={scrollTo("experience")}>
             Experience
           </a>
@@ -163,6 +158,11 @@ function App() {
         <li>
           <a href="/#education" onClick={scrollTo("education")}>
             Education
+          </a>
+        </li>
+        <li>
+          <a href="/#projects" onClick={scrollTo("projects")}>
+            Projects
           </a>
         </li>
         <li>
